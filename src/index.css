@@ -1,13 +1,369 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+
+.logos {
+  font-size: 3rem;
+}
+
+
+.logo {
+  color: #FD7F20;
+  display: inline-block;
+  transition: all .2s ease-in;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+.logo:nth-child(2) {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 5rem;
+  padding: 2rem;
+  background-color: #171717;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 40rem;
+  background-color: #171717;
+  color: white;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-container {
+  margin-left: 3rem;
+}
+
+.hero h1 {
+  font-size: 5.5rem;
+  font-weight: 700px;
+}
+
+.hero h1 span {
+  color: #FD7F20;
+}
+
+.hero-nav {
+  margin-top: 3rem;
+}
+
+.hero-nav-a {
+  color: #FD7F20;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 1px solid #FD7F20;
+  background: transparent;
+  background-image: url('../public/wave.png');
+  background-repeat: repeat-x;
+  background-position: 0 -100%;
+  transition: .3s ease-in-out;
+}
+
+.hero-nav-a:hover {
+  background-position: center;
+  color: white;
+}
+
+/* Skills */
+
+.skills {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-color: #171717;
+}
+
+.skills-title {
+  z-index: 3;
+  margin-top: 20rem;
+}
+
+.skills-title h1 {
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.skills-title, .layer-top{
+  grid-area: 1/1;
+}
+
+.skills-images-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  padding: 5rem;
+}
+
+/* Skill */
+
+.skill h2 {
+  color: white;
+  margin-top: 1rem;
+}
+
+.skill img {
+  background-color: white;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+
+/* Projects */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  background-color: #171717;
+  color: white;
+}
+
+.project-header {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+/* Project */
+
+.project-container {
+  display: flex;
+  padding: 5rem;
+  gap: 5rem;
+}
+
+.project-left {
+  max-width: 33.33%;
+}
+
+.project-title {
+  font-size: 2.5rem;
+}
+
+.project-desc {
+  font-size: 1.5rem;
+  margin: 2rem 0 3rem 0;
+}
+
+.project-nav-a {
+  color: #FD7F20;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 1px solid #FD7F20;
+  background: transparent;
+  background-image: url('../public/wave.png');
+  background-repeat: repeat-x;
+  background-position: 0 -100%;
+  transition: .3s ease-in-out;
+}
+
+.project-nav-a:hover {
+  background-position: center;
+  color: white;
+}
+
+.project-right {
+  width: 66.666667%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.project-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* About */
+
+.about {
+  background-color: #171717;
+  width: 100%;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container h1 {
+  padding: 3rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.about-details {
+  display: flex;
+  width: 100rem;
+  margin: auto;
+}
+
+.about-details-left {
+  width: 50%;
+  height: 30rem;
+}
+
+.about-details-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-details-right {
+  width: 50%;
+  color: white;
+  padding: 3rem;
+}
+
+.about-details-right p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+#center {
+  margin: 1rem 0 1rem 0;
+}
+
+#center + p {
+  margin-bottom: 3rem;
+}
+
+.about-nav-a {
+  color: #FD7F20;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 1px solid #FD7F20;
+  background: transparent;
+  background-image: url('../public/wave.png');
+  background-repeat: repeat-x;
+  background-position: 0 -100%;
+  transition: .3s ease-in-out;
+}
+
+.about-nav-a:hover {
+  background-position: center;
+  color: white;
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #171717;
+  color: white;
+  padding: 3rem;
+}
+
+.contact-header {
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#name, #email, #msg {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Montserrat';
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+#email {
+  margin: 1rem 0 1rem 0;
+}
+
+.mail-submit {
+  color: #FD7F20;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 1px solid #FD7F20;
+  background: transparent;
+  background-image: url('../public/wave.png');
+  background-repeat: repeat-x;
+  background-position: 0 -100%;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.mail-submit:hover {
+  background-position: center;
+  color: white;
+}
+
+/* Waves */
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+.layer-top {
+  background-image: url('../public/wave-haikei.svg');
+}
+
+.layer-bottom {
+  background-image: url('../public/layered-waves-haikei.svg');
+}
+
+.blob-top {
+  background-image: url('../public/blob-haikei.svg');
+}
+
+.blob-bottom {
+  background-image: url('../public/blob-haikei\(1\).svg');
+  margin-top: -30rem;
+}
+
+.invert {
+  transform: scaleY(-1);
 }
