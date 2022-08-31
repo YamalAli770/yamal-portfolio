@@ -8,7 +8,7 @@ import Footer from "./Components/Footer";
 import Maintenance from "./Components/Maintenance";
 
 function App() {
-  const maintenance = true;
+  const maintenance = false;
   return (
     <>
       {maintenance ? (<Maintenance />) :(
