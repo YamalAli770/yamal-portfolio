@@ -3,8 +3,6 @@ import React from 'react'
 const About = () => {
   return (
     <section className="about" id='about'>
-      <div className="spacer blob-top">
-        <div className="about-container">
           <h1>about</h1>
           <section className="about-details">
             <section className="about-details-left">
@@ -25,9 +23,6 @@ const About = () => {
               </nav>
             </section>
           </section>
-        </div>
-      </div>
-      <div className="spacer blob-bottom"></div>
     </section>
   )
 }

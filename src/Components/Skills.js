@@ -8,13 +8,10 @@ const Skills = () => {
         <div className="skills-title">
             <h1>Skills</h1>
         </div>
-        <div className="spacer layer-top"></div>
-        <div className="spacer layer-bottom">
-            <div className="skills-images-container">
-                {Data.map((item) => {
-                    return (<Skill item={item} />)
-                })}
-            </div>
+        <div className="skills-images-container">
+            {Data.map((item) => {
+                return (<Skill item={item} key={item.id} />)
+            })}
         </div>
     </div>
   )

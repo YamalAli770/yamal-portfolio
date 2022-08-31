@@ -1,15 +1,16 @@
 import React from 'react'
+import { Link } from "react-scroll";
 
 const Hero = () => {
     return (
         <div className="hero">
             <div className="hero-container">
-                <h1>Hi, I'm <span>Yamal.</span><br />I'm a full stack developer.</h1>
+                <h1>Hi, I'm <span>Yamal.</span><br />I'm a Full Stack Developer.</h1>
                 <nav className="hero-nav">
-                    <a href="#skills" className='hero-nav-a'>Skills</a>
-                    <a href="#projects" className='hero-nav-a'>Projects</a>
-                    <a href="#about" className='hero-nav-a'>About</a>
-                    <a href="#contact" className='hero-nav-a'>Contact</a>
+                    <Link to='skills' smooth={true} duration={500} className='hero-nav-a'>Skills</Link>
+                    <Link to='projects' smooth={true} duration={500} className='hero-nav-a'>Projects</Link>
+                    <Link to='about' smooth={true} duration={800} className='hero-nav-a'>About</Link>
+                    <Link to='contact' smooth={true} duration={900} className='hero-nav-a'>Contact</Link>
                 </nav>
             </div>
         </div>
