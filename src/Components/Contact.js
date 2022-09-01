@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
         <div className="contact-container">
-            <h1 className="contact-header">contact</h1>
+            <h1 className="contact-header" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in" data-aos-once="true">contact</h1>
             <ToastContainer autoClose={2000} />
             <form ref={form} onSubmit={sendEmail} className="contact-form">
                 <input type="text" name='name' id='name' placeholder='Name' required />

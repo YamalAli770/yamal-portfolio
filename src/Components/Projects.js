@@ -5,7 +5,7 @@ import Data from '../project-data'
 const Projects = () => {
   return (
     <div className="projects" id='projects'>
-        <h1 className="project-header">
+        <h1 className="project-header" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in" data-aos-once="true">
             projects
         </h1>
         <div className="projects-container">
