@@ -32,40 +32,11 @@ html {
   font-size: 3rem;
 }
 
-.toggle {
-  font-size: 1.2rem;
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.react-toggle {
-  color: white;
-}
-
-.react-toggle--checked .react-toggle-track {
-  background-color: var(--color) !important;
-}
-
-.react-toggle .react-toggle-track {
-  background-color: var(--color) !important;
-}
-
-.react-toggle--checked .react-toggle-thumb {
-  border-color: var(--color) !important;
-}
-
-.react-toggle .react-toggle-thumb {
-  border-color: var(--color) !important;
-}
-
-.react-toggle--checked {
-  color: white;
-}
-
 .logo {
   color: var(--color);
   display: inline-block;
   transition: all .2s ease-in;
+  cursor: pointer;
 }
 
 .logo:hover {

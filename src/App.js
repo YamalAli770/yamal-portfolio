@@ -12,15 +12,22 @@ export const ThemeContext = createContext();
 
 function App() {
   const maintenance = false;
-  const [theme, setTheme] = useState("dark-theme");
+  const [theme, setTheme] = useState(() => {
+    if(localStorage.getItem("theme") === null) {
+      return "dark-theme";
+    }
+    else {
+      return localStorage.getItem("theme");
+    }
+  });
   const toggleTheme = () => {
     setTheme((curr) => curr === 'dark-theme' ? "light-theme" : "dark-theme")
   }
 
   useEffect(() => {
+    localStorage.setItem("theme", theme);
     document.body.className = theme;
   }, [theme])
-
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

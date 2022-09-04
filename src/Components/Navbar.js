@@ -1,16 +1,14 @@
 import React, { useContext } from 'react'
 import { FaLinkedinIn, FaGithub, FaFile } from 'react-icons/fa'
 import { ThemeContext } from '../App'
-import "react-toggle/style.css"
-import Toggle from 'react-toggle'
 import { FaSun, FaMoon } from 'react-icons/fa'
 
 const Navbar = () => {
     const theme = useContext(ThemeContext);
     return (
         <div className="navbar">
-            <Toggle className='toggle' onClick={theme.toggleTheme} defaultChecked={false} icons={{ checked: <FaMoon />, unchecked: <FaSun /> }} />
             <nav className="logos">
+                {theme.theme === "dark-theme" ? <FaSun onClick={theme.toggleTheme} className='logo' /> : <FaMoon onClick={theme.toggleTheme} className='logo' />}
                 <a href="https://www.linkedin.com/in/yamalali/" className='logo' target="_blank" rel='noreferrer'>
                     <FaLinkedinIn />
                 </a>

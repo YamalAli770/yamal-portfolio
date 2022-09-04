@@ -14,13 +14,13 @@ const Contact = () => {
           toast.success("Email Sent", {
             icon: '🙌🏻',
             pauseOnHover: false,
-            style: {backgroundColor: '#FD7F20', color: 'white', fontSize: '1.5rem', fontFamily: 'Montserrat'}
+            style: {backgroundColor: '#171717', color: 'white', fontSize: '1.5rem', fontFamily: 'Montserrat'}
           })
       }, (error) => {
           toast.error("Can't Send Email", {
             icon: '🙏🏻',
             pauseOnHover: false,
-            style: {backgroundColor: '#FD7F20', color: 'white', fontSize: '1.5rem', fontFamily: 'Montserrat'}
+            style: {backgroundColor: '#171717', color: 'white', fontSize: '1.5rem', fontFamily: 'Montserrat'}
           })
       });
       e.target.reset();
