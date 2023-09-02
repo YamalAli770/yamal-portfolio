@@ -16,21 +16,26 @@ const skillsData = [
     },
     {
         id: 4,
+        link: 'images/ts.png',
+        title: 'ts'
+    },
+    {
+        id: 5,
         link: 'images/react.png',
         title: 'react'
     },
     {
-        id: 5,
+        id: 6,
         link: 'images/nodejs.png',
         title: 'node'
     },
     {
-        id: 6,
+        id: 7,
         link: 'images/postgres.png',
         title: 'postgres'
     },
     {
-        id: 7,
+        id: 8,
         link: 'images/mongodb.png',
         title: 'mongodb'
     },

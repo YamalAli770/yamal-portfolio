@@ -17,7 +17,7 @@ const About = () => {
           <section className="about-details-left" data-aos="fade-up" data-aos-duration="900" data-aos-once="true" data-aos-easing="ease-in">
             <img src="/images/about-img.png" alt="" />
           </section>
-          <section className="about-details-right" data-aos="fade-right" data-aos-duration="900" data-aos-easing="ease-in">
+          <section className="about-details-right" data-aos="fade-right" data-aos-duration="900" data-aos-easing="ease-in" data-aos-once="true">
             <p>
               I am a Software Engineering Undergrad currently pursuing my Bachelors in Software Engineering from <i>@NED</i> University. Hoping to graduate by 2024 
             </p>

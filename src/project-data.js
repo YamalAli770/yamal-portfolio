@@ -10,12 +10,12 @@ const projectData = [
     },
     {
         id: 2,
-        title: 'Todo List',
-        desc: "A Todo-List application developed using ReactJs. Users can create, delete and mark existing todos as completed. The todos are stored inside browsers local storage.",
+        title: 'Zawiyah',
+        desc: "Zawiyah is a bidding website where you can promote yourself as a craftsmen by listing your handicrafts to be bid by a large pool of users. ",
         note: '',
-        img: 'images/todo-list.png',
-        liveLink: 'https://y-todos.netlify.app/',
-        githubLink: 'https://github.com/YamalAli770/Todo-List-React'
+        img: 'images/zawiyah.png',
+        liveLink: 'https://zawiyah-frontend-sigma.vercel.app/',
+        githubLink: 'https://github.com/YamalAli770/zawiyah-frontend'
     },
     {
         id: 3,
